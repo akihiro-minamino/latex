@@ -30,8 +30,59 @@ captionpos = t
 
 \begin{document}
 \maketitle
-%\section{}
-%\subsection{}
+
+\section{スタイルファイル}
+\subsection{listings.styとjlisting.sty}
+使用例
+\begin{lstlisting}
+\usepackage{listings, jlisting}
+\renewcommand{\lstlistingname}{リスト}
+\lstset{
+%language = R,
+%language = C++,   
+breaklines = true,
+numbers = left,
+frame = tbrl,
+tabsize = 4,
+basicstyle =\ttfamily,
+captionpos = t
+}
+
+\begin{lstlisting}
+ソースコード
+end{lstlisting}
+\end{lstlisting} 
+実行例
+\begin{lstlisting}
+ソースコード
+\end{lstlisting}
+　\\
+オプション（全体）の説明
+\begin{lstlisting}
+language= lstlisting環境内の言語の指定。参照
+numbers=	 行番号表示
+  デフォルト：none
+  他のオプション：left、right
+stepnumber= 行番号増分
+numberstyle= 行番号の書体指定
+numbersep= 行番号と本文の間隔
+  デフォルト：10pt。
+breaklines= 行が長くなってしまった場合の改行
+  デフォルト：false
+  他のオプション：true
+breakindent= 改行時インデント量
+  デフォルト：20pt。
+frame= frameの指定
+ デフォルト：none
+ 他のオプション：leftline、topline、bottomline、lines、single、shadowbox
+framesep= frameまでの間隔
+basicstyle= 書体の指定
+  \ttfamily がおすすめ
+commentstyle=	 注釈の書体
+keywordstyle= キーワードの書体指定
+caption= キャプションの指定
+label= ラベルの指定
+\end{lstlisting}
 
 
 
