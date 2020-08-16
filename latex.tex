@@ -1,6 +1,7 @@
 \documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
 \usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
 \usepackage{listings, jlisting}
+\usepackage[version=3]{mhchem}
 \renewcommand{\lstlistingname}{リスト}
 \lstset{
 %language = R,
@@ -86,6 +87,22 @@ keywordstyle= キーワードの書体指定
 caption= キャプションの指定
 label= ラベルの指定
 \end{lstlisting}
+
+
+\subsection{mhchem.sty}
+化学式の表現に利用。\\
+詳しくは、
+\verb| https://doratex.hatenablog.jp/entry/20131203/1386068127 |を参照。\\
+基本となるのが\verb|\ce|という命令である。
+　\\
+使用例
+\begin{lstlisting}
+\usepackage[version=3]{mhchem}
+
+\ce{_{17}^{35}Cl}
+\end{lstlisting} 
+実行例\\
+\ce{_{17}^{35}Cl}
 
 
 
