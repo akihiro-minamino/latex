@@ -104,6 +104,18 @@ label= ラベルの指定
 実行例\\
 \ce{_{17}^{35}Cl}
 
-
+\section{小技}
+\subsection{改行をまたいで括弧をつける}
+数式モードでは、
+\begin{lstlisting}
+\left( xxxxx \right)
+\end{lstlisting}
+と書いて、大きい括弧を書きますが、改行を挟むとエラーがでます。\\
+解決法は、
+\begin{lstlisting}
+\left( xxxxx \right. \\
+\left. yyyy \right)
+\end{lstlisting}
+のように\verb|\left.|や\verb|\right.|を利用して書く。
 
 \end{document}  
